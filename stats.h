@@ -36,5 +36,64 @@
  * @return <Add Return Informaiton here>
  */
 
+/**
+ * @brief Prints the statistics of an array including minimum, maximum, mean and median.
+ *
+ * @param ptr Pointer to the unsigned char data array
+ * @param size Size of the data array
+ *
+ * @return None
+ */
+void print_statistics(unsigned char *ptr, unsigned int size);
+
+/**
+ * @brief Prints the array to the screen
+ * 
+ * @param ptr Pointer to the unsigned char data array
+ * @param size Size of the data array
+ *
+ * @return None
+ */
+void print_array(unsigned char *ptr, unsigned int size);
+
+/**
+ * @brief Finds the median value of an array.
+ *
+ * @param ptr Pointer to the unsigned char data array
+ * @param size Size of the data array
+ *
+ * @return Median value as unsigned char
+ */
+unsigned char find_median(unsigned char *ptr, unsigned int size);
+
+/**
+ * @brief Finds the mean value of an array.
+ *
+ * @param ptr Pointer to the unsigned char data array
+ * @param size Size of the data array
+ *
+ * @return Mean value as unsigned char
+ */
+unsigned char find_mean(unsigned char *ptr, unsigned int size);
+
+/**
+ * @brief Finds the maximum value of an array.
+ *
+ * @param ptr Pointer to the unsigned char data array
+ * @param size Size of the data array
+ *
+ * @return Maximum value as unsigned char
+ */
+unsigned char find_maximum(unsigned char *ptr, unsigned int size);
+
+/**
+ * @brief Sorts the array from largest to smallest.
+ *
+ * @param ptr Pointer to the unsigned char data array
+ * @param size Size of the data array
+ *
+ * @return None
+ */
+void sort_array(unsigned char *ptr, unsigned int size);
 
 #endif /* __STATS_H__ */
