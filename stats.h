@@ -24,19 +24,6 @@
 /* Add Your Declarations and Function Comments here */ 
 
 /**
- * @brief <Add Brief Description of Function Here>
- *
- * <Add Extended Description Here>
- *
- * @param <Add InputName> <add description here>
- * @param <Add InputName> <add description here>
- * @param <Add InputName> <add description here>
- * @param <Add InputName> <add description here>
- *
- * @return <Add Return Informaiton here>
- */
-
-/**
  * @brief Prints the statistics of an array including minimum, maximum, mean and median.
  *
  * @param ptr Pointer to the unsigned char data array
@@ -87,7 +74,17 @@ unsigned char find_mean(unsigned char *ptr, unsigned int size);
 unsigned char find_maximum(unsigned char *ptr, unsigned int size);
 
 /**
- * @brief Sorts the array from largest to smallest.
+ * @brief Finds the minimum value of an array.
+ *
+ * @param ptr Pointer to the unsigned char data array
+ * @param size Size of the data array
+ *
+ * @return Minimum value as unsigned char
+ */
+unsigned char find_minimum(unsigned char *ptr, unsigned int size);
+
+/**
+ * @brief Sorts the array from smallest to largest.
  *
  * @param ptr Pointer to the unsigned char data array
  * @param size Size of the data array
