@@ -100,28 +100,14 @@ unsigned char find_mean(unsigned char *ptr, unsigned int size) {
 }
 
 unsigned char find_maximum(unsigned char *ptr, unsigned int size) {
+  sort_array(ptr, size);
   unsigned int maximum = ptr[0];
-  if (ptr == NULL || size == 0) {
-    return 0;
-  }
-  for (unsigned int i = 0; i<size-1; i++) {
-    if (ptr[i]<ptr[i+1]) {
-      maximum = ptr[i];
-    }
-  }
   return maximum;
 }
 
 unsigned char find_minimum(unsigned char *ptr, unsigned int size) {
-  unsigned int minimum = ptr[0];
-  if (ptr == NULL || size == 0) {
-    return 0;
-  }
-  for (unsigned int i = 0; i<size-1; i++) {
-    if (ptr[i]<ptr[i+1]) {
-      minimum = ptr[i];
-    }
-  }
+  sort_array(ptr, size);
+  unsigned int minimum = ptr[size-1];
   return minimum;
 }
 
