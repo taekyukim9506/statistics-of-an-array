@@ -35,7 +35,7 @@ void main() {
                               201,   6,  12,  60,   8,   2,   5,  67,
                                 7,  87, 250, 230,  99,   3, 100,  90};
   print_statistics(test, SIZE);
-
+  print_array(test,SIZE);
   
   /* Statistics and Printing Functions Go Here */
 
@@ -58,6 +58,7 @@ void print_statistics(unsigned char *ptr, unsigned int size) {
 }
 
 void print_array(unsigned char *ptr, unsigned int size) {
+
   for (unsigned int i = 0; i < size; i++){
     if (i > 0 && i%8 == 0) {
       printf("\n");
